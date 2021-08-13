@@ -1,0 +1,568 @@
+a {
+  text-decoration: none;
+}
+// header top
+.top {
+  font-size: 12px;
+  background-color: $topbg;
+  .top-content {
+    button {
+      font-size: 12px !important;
+      font-weight: 500 !important;
+    }
+    .left {
+      color: $secondary;
+      a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: $secondary;
+      }
+      .social-media {
+        margin-right: 3rem;
+        color: $secondary;
+        a {
+          padding: 0px 1rem;
+        }
+      }
+    }
+    .right {
+      a {
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      .about-us {
+        color: $primary !important;
+      }
+      .contact-us {
+        color: $secondary;
+        font-weight: 500 !important;
+      }
+    }
+  }
+  //   media screen for header top
+
+  //   media screen for 768 devices
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    .top-content {
+      //background-color: red;
+      button {
+        font-size: 10px !important;
+      }
+      .left {
+        //background-color: green;
+        a {
+          margin: 0px 0px;
+        }
+        .social-media {
+          margin-right: 1rem;
+          a {
+            padding: 0px 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  //   end of media screen for 768px devices
+
+  //   media screen for 480p devices
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    .top-content {
+      //background-color: red;
+      button {
+        font-size: 10px !important;
+      }
+      .left {
+        //background-color: green;
+        a {
+          margin: 0px 0px;
+          .btn {
+            padding: 0px 0px !important;
+          }
+        }
+        .social-media {
+          margin-right: 1rem;
+          a {
+            padding: 0px 0.5rem;
+          }
+        }
+        .phone {
+          display: none;
+        }
+      }
+      .right {
+        margin-left: auto;
+      }
+    }
+  }
+  //   end of media screen 480px devices
+  //   end of media screen
+}
+// end of header top
+
+// navigation menu
+.navigation {
+  background-color: $light;
+  box-shadow: 0px 1px 3px rgba(224, 224, 224, 0.91);
+  .nav-content {
+    nav {
+      .navlist {
+        .navbar-nav {
+          .inpu {
+            .input-group {
+              input::placeholder {
+                font-size: 9px;
+              }
+              .one {
+                border: none;
+                button,
+                .btn {
+                  padding: 0px 0px;
+                  font-size: 12px !important;
+                  color: $darkest !important;
+                  font-weight: 500 !important;
+                }
+              }
+              .two {
+                border: none;
+                background-color: $primary;
+                border-radius: 5px;
+                button,
+                .btn {
+                  padding: 0px 0px;
+                  color: $tertiary;
+                }
+              }
+            }
+          }
+        }
+      }
+      .navicons {
+        .list {
+          .nav-item {
+            .nav-link {
+              color: black;
+              .question {
+                color: $danger;
+              }
+              .profile {
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.main-content {
+  //margin-top: -130px;
+  //background-color: green;
+  position: relative;
+  z-index: -1000;
+  .services {
+    padding: 16px 28px;
+    margin-top: -70px;
+    left: 50px;
+    right: 50px;
+    @media screen and (max-width: 1217px) {
+      display: none;
+    }
+    //z-index: 1000;
+    position: absolute;
+    background-color: $light;
+    box-shadow: 0px 2px 0px rgba(253, 106, 0, 0.25);
+    .card {
+      width: 265px;
+      height: 80px;
+      .card-body {
+        .card-content {
+          .card-text {
+            h6 {
+              font-weight: 500;
+              font-size: 16px;
+              color: $darkest;
+            }
+            p {
+              font-size: 10px;
+              font-weight: 500;
+              color: $dark;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  // end of the services section
+
+  // the trending section start
+  .trending {
+    margin-top: 116px;
+    padding-bottom: 50px;
+    .trending-left-area {
+      background: linear-gradient(236.31deg, $light-blue 0%, #f5fdff 160.07%);
+      border-radius: 5px;
+    }
+    .trending-right-area {
+      .card {
+        //background: url("./echo-trend.png") no-repeat;
+        background-image: url("./echo-trend.png");
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+      .clip-area {
+        gap: 1rem;
+        @media screen and (min-width: 991px) {
+          gap: 0;
+        }
+        .left-side-col {
+          background-color: $topbg;
+          @media screen and (min-width: 991px) {
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+            // width: 100%;
+            // max-width: 1000px;
+          }
+        }
+        .right-side-col {
+          background: url("./img/ubu img 2.png") no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media screen and (min-width: 991px) {
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 99%);
+            // width: 100%;
+            // max-width: 1000px;
+          }
+        }
+      }
+    }
+  }
+  // end of the trending section
+
+  // brand partners section
+  .brand-partners {
+    background-color: $tertiary;
+    border: 2px solid $lightgray;
+    box-sizing: border-box;
+    h4 {
+      font-size: 29px;
+      font-weight: normal;
+      letter-spacing: 0.0025em;
+      color: $darkest;
+    }
+    .image-box {
+      border-radius: 4px;
+      h5 {
+        font-size: 29px;
+        font-weight: normal;
+        letter-spacing: 0.0025em;
+        color: $light;
+      }
+    }
+  }
+  // end of the brand-partners section
+
+  // the bestseller menu
+  // .bestseller-group {
+  //   .bestseller-content {
+  //     .item-heading {
+  //       // @media screen and (max-width: 480px) {
+  //       //   justify-content: space-between;
+  //       // }
+  //     }
+  //   }
+  // }
+}
+.new-arrivals {
+  .new-arrival-content {
+    .left-arrival {
+      .card {
+        background-color: $topbg;
+        .card-body {
+          .save {
+            background: rgba(253, 106, 0, 0.2);
+            border: 3px solid rgba(253, 106, 0, 0.2);
+            width: 76px;
+            height: 76px;
+            border-radius: 100%;
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: 0.0125em;
+              color: $dark;
+            }
+          }
+          .new-echo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.0015em;
+            color: $dark;
+            span {
+              font-weight: 500;
+            }
+          }
+          .hurry {
+            font-size: 12px;
+            color: $dark;
+            letter-spacing: 0.0025em;
+          }
+          .time {
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 0.0125em;
+              color: $dark;
+            }
+            .timer {
+              font-size: 9px;
+              font-weight: 400;
+              letter-spacing: 0.015em;
+              color: $dark;
+              span {
+                font-size: 14px;
+                letter-spacing: 0.0125em;
+                font-weight: 500;
+                border: 2px solid $primary;
+                border-radius: 6px;
+                padding: 16px;
+                //margin-bottom: 21px;
+              }
+            }
+          }
+          .available {
+            font-size: 12px;
+            font-weight: 500;
+            color: $darkest;
+            letter-spacing: 0.001em;
+            margin-top: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+.controller-area {
+  background: url("./gamebg.png");
+  .controller-box {
+    .left-content {
+      .gaming-accessories-btn {
+        padding: 8px 20px;
+        border-radius: 5px;
+        background-color: $darkest;
+        color: $tertiary;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: $lightgray;
+      }
+      p {
+        font-weight: 400;
+        color: $light;
+      }
+    }
+  }
+}
+.recently-viewed {
+  background-color: $pink;
+  .recently-viewed-content {
+    .card-products {
+      .card:hover {
+        box-shadow: 0px 6px 30px 1px rgba(232, 97, 0, 0.28);
+        border-radius: 4px;
+      }
+    }
+  }
+}
+.brand-two {
+  padding-top: 100px;
+  .card {
+    background-color: $topbg;
+    // width: 500px;
+    // height: 226px;
+    .card-body {
+      display: flex;
+      @media screen and (max-width: 480px) {
+        flex-direction: column-reverse;
+      }
+    }
+    .brand-content {
+      h2 {
+        color: $darkest;
+        font-size: 21px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        color: $gray;
+        letter-spacing: 0.005em;
+      }
+    }
+  }
+}
+// .smart-watches {
+//   .smartwatches-content {
+//     position: relative;
+//     .item-heading {
+//       position: absolute;
+//     }
+//   }
+// }
+.banner {
+  .card {
+    background-color: $topbg;
+    height: 226px;
+    .card-body {
+      .banner-content {
+        h5 {
+          font-size: 21px;
+          font-weight: 500;
+          color: $darkest;
+        }
+      }
+    }
+  }
+}
+.latest-products {
+  .left-products {
+    .item-heading {
+      .products {
+        h3 {
+          font-weight: 500;
+          font-size: 21px;
+          color: $darkest;
+        }
+      }
+    }
+    .list-group {
+      .sample {
+        a {
+          font-size: 12px;
+          color: $primary;
+          font-weight: 500;
+          white-space: nowrap;
+          text-decoration: none;
+        }
+      }
+      .last {
+        .dark {
+          border-radius: 5px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  .right-products {
+    .card {
+      margin-bottom: 30px;
+      .latest-product-content {
+        .combo-item {
+          .off {
+            background: rgba(253, 106, 0, 0.2);
+            border: 3px solid rgba(253, 106, 0, 0.2);
+            box-sizing: border-box;
+            width: 76px;
+            height: 76px;
+            border-radius: 100%;
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: 0.0125em;
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.fast-sellers {
+  padding-bottom: 163px;
+}
+footer {
+  background-color: $darkest;
+  @media screen and (min-width: 926px) {
+    position: relative;
+  }
+  .subscribe {
+    padding: 30px 50px;
+    border-radius: 5px;
+    background-color: $light;
+    box-shadow: 0px -2px 0px $secondary;
+    @media screen and (min-width: 926px) {
+      position: absolute;
+      top: -20%;
+    }
+    .input-group {
+      input {
+        background-color: $topbg;
+        width: 576px;
+        height: 70px;
+      }
+      input::placeholder {
+        color: #b8b8bb;
+        font-size: 18px;
+        letter-spacing: 0.005em;
+        font-weight: 400;
+      }
+      .input-group-text {
+        background-color: $secondary;
+        border-radius: 0px 5px 5px 0px;
+        a {
+          text-decoration: none;
+          color: $light;
+          font-weight: 500;
+          font-size: 18px;
+          letter-spacing: 0.005em;
+        }
+      }
+    }
+    h4 {
+      font-size: 21px;
+      font-weight: 700;
+      color: $dark;
+      @media screen and (max-width: 480px) {
+        font-size: 10px;
+      }
+    }
+  }
+  .icons {
+    border-bottom: 2px solid $gray;
+    .social {
+      a {
+        padding: 8px 12px;
+        background-color: white;
+        border-radius: round($number: 50%);
+        i {
+          color: $gray;
+        }
+      }
+    }
+  }
+  .contact-area {
+    border-bottom: 2px solid $gray;
+    i {
+      color: $gray;
+    }
+    .number {
+      color: $gray;
+    }
+  }
+  .copywright {
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      color: $lightgray;
+      span {
+        color: $primary;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 12px;
+      }
+    }
+  }
+}

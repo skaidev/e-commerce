@@ -1,0 +1,158 @@
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+.fone {
+  font-size: 12px;
+}
+.ftwo {
+  font-size: 14px;
+}
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.light-gray {
+  background-color: $lightgray !important;
+}
+.color {
+  color: $primary !important;
+}
+.transparent-blue {
+  background-color: $transparent-blue !important;
+}
+.new-arrival-card {
+  height: 750px;
+}
+.shop-btn {
+  .shop {
+    text-decoration: none;
+    font-size: 9px;
+    color: $tertiary;
+    font-weight: 500;
+    background-color: $primary;
+    border: 1.5px solid rgba(255, 255, 255, 0.77);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 8px 16px;
+    letter-spacing: 0.015em;
+  }
+}
+.discount {
+  p {
+    font-size: 9px;
+    font-weight: 500;
+    color: $darkest;
+    padding: 8px;
+    display: inline-block;
+    letter-spacing: 0.015em;
+    background: $light;
+    border: 1.5px solid rgba(214, 230, 243, 0.81);
+    border-radius: 3px;
+  }
+}
+.echo-text {
+  font-size: 12px !important;
+  font-weight: 500;
+  letter-spacing: 0.001em;
+  color: $dark;
+}
+.price {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  color: $darkest;
+  span {
+    font-weight: 400;
+    color: $danger;
+  }
+}
+.main {
+  padding: 14px 32px;
+  margin-right: 20px;
+  background-color: $primary;
+  a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: $tertiary;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 7px 16px;
+    a {
+      font-size: 10px;
+      white-space: nowrap;
+    }
+  }
+}
+.not-active {
+  padding: 14px 32px;
+  margin-right: 20px;
+  background-color: $lightgray;
+  a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: $gray;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 7px 16px;
+    a {
+      font-size: 10px;
+      white-space: nowrap;
+    }
+  }
+}
+// .item-a {
+//   text-decoration: none;
+//   font-size: 9px;
+//   font-weight: 500;
+//   color: $tertiary;
+//   //padding: 14px 32px;
+//   //background-color: $primary;
+// }
+.ratings {
+  a {
+    i {
+      color: $rating;
+    }
+  }
+}
+.buy-now {
+  padding: 8px 10px;
+  margin-right: 5px;
+  background-color: $primary;
+  border-radius: 3px;
+  border: 1.5px solid rgba(255, 255, 255, 0.77);
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    size: 9px;
+    letter-spacing: 0.05em;
+    color: $tertiary;
+    white-space: nowrap;
+  }
+}
+.icons {
+  a {
+    margin-right: 10px;
+    i {
+      color: $dark;
+    }
+  }
+}
+.see-all {
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    size: 9px;
+    letter-spacing: 0.001em;
+    color: $primary;
+    padding: 8px 10px;
+    background-color: $tertiary;
+    border-radius: 3px;
+    border: 1px solid $primary;
+  }
+}
